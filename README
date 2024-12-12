@@ -1,16 +1,21 @@
-# Advanced-Topics-In-Programing-assignment3
+# Multi-Threaded Simulation for smart vacuum machine 
 
 # names of the contributers: Hend Bishara, Anan Ghanaim
 
+#brief decription:
+In this project we create a multi-threaded program that simulates an automatic vacuum cleaner using different algorithms for cleanin on different houses. 
+The goal is to clean as much dirt as possible using less than the given maximum steps and without the battery of the vacuum cleaner dying. 
+each house and algorithm get a score depending on the dirt left in the house and the maximum steps performed. 
+
 # Description of the project files:
 the project contains:
-- Algo_209120054_207759085_Deterministic: a foldder that contains the cpp and h files of the first algorithm. and a separet cmake file for this project
-- Algo_209120054_207759085_Random: a foldder that contains the cpp and h files of the second algorithm. and a separate cmae file for this project
+- Algo_Deterministic: a folder that contains the cpp and h files of the first algorithm. and a separet cmake file for this project
+- Algo_Random: a folder that contains the cpp and h files of the second algorithm. and a separate cmae file for this project
 - common_algo: folder that contains a base class that both algorithms inherit from and two other classes that both algorithms use.
-- common: contains the provided abstract classes
+- common: contains the abstract classes
 - algorithm: contains the algorithm regestration
 -simulator: folder that contains the classes needed to run the main (which is is myrobot.cpp)
-- Houses: additional folder with 3 ecample house input and 2 out put example files for each input (one per algorithm), in addition there is a csv summary foled for this run. 
+- Houses: additional folder with 3 example house input and 2 out-put example files for each input (one per algorithm), in addition there is a csv summary foled for this run. 
 
 To build the whole project: the main and the two algorithms use this command:
 rm -r build ; cmake -S . -B ./build ; cmake --build ./build
@@ -19,13 +24,11 @@ to run the simulator run this command after the build:
 
 ./build/myrobot
 
-you can specify the command line arguments as well a described in the assignment
-
 To build each project independently run these two commands:
 for first project:
-rm -r ./Algo_209120054_207759085_Deterministic/build; cmake -S Algo_209120054_207759085_Deterministic -B ./Algo_209120054_207759085_Deterministic/build ; cmake --build ./Algo_209120054_207759085_Deterministic/build
+rm -r ./Algo_Deterministic/build; cmake -S Algo_Deterministic -B ./Algo_Deterministic/build ; cmake --build ./Algo_Deterministic/build
 for second project:
-rm -r ./Algo_209120054_207759085_Random/build; cmake -S Algo_209120054_207759085_Random -B ./Algo_209120054_207759085_Random/build ; cmake --build ./Algo_209120054_207759085_Random/build
+rm -r ./Algo_Random/build; cmake -S Algo_Random -B ./Algo_Random/build ; cmake --build ./Algo_Random/build
 
 
 # Brief description of the algorims

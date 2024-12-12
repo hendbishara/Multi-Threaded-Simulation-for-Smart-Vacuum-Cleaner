@@ -44,3 +44,5 @@ the second algorithm is random: chooses randomly a direction that is not a wall 
 # Notes:
 **If an algorithm communicates an ilegal step to the simulator, such as going into a wall, the simulator will print a proper error and end the simulation. the status will be DEAD.
 ** our main, myrobot.cpp, creates a Task for each algorithm-house pair, when calling on the run_tasks function, it creates a pool of threads according to the number of threads specified and starts assigning each task to an available thread. each task, when it starts running it starts the clock with a specified timer, if the task is not done running on this thread before the timer finishes the thread will be terminated and handeled in the timeHandler.
+
+# This project was built as part of the Advanced topics in programing course at Tel Aviv University.
